@@ -1,2 +1,12 @@
+#my-header {
+    justify-content: center;
+    height: 15rem;
+    background-color: red;
+    
+}
+
+body {
+    background-color: blue;
+}
 
 
