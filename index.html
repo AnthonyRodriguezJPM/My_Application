@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta Data -->
+        <meta charset="utf-8">
+        <meta name="author" content="Anthony Rodriguez">
+        <meta name="description" content="Webpage that loads a piece of art based on what is typed in the search bar.">
+        <title>Art Project</title>
+
+        <script src="index.js" defer></script>
+
+        <!-- Meta - Mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="index.css">
+
+        <!-- Icon -->
+        <link rel="icon" href="images/icon.jpeg" type="image/jpeg" sizes="16x16">
+    </head>
+
+    <body>
+        <header id="my-header">
+            <div class= "logo">Feel The Art</div>
+            <div>
+            <a class="api-source" href="https://www.artic.edu/open-access/public-api">API Source</a>
+            </div>
+            <h1>Let The Your Creative Side Show</h1>
+        </header>
+
+        <div class="container">
+            <form id="form">
+                <h3>Search for Art</h3>
+
+                <input
+                id="input1"
+                type="text"
+                name="name"
+                value=""
+                placeholder="Enter Keyword"
+                class="input-text"
+                />
+            
+                <br />
+
+                <input
+                id="enter"
+                type="submit"
+                name="submit"
+                value="Paint Away"
+                class="submit"
+                />
+            </form>
+            <div id="art-collection"></div>
+        </div>
+        
+    </body>
+
+</html>
