@@ -1,12 +1,26 @@
 #my-header {
     justify-content: center;
     height: 15rem;
-    background-color: red;
+    background-color: whitesmoke;
     
 }
 
 body {
-    background-color: blue;
+    background-color: white;
 }
+
+.art-card {
+    background-color: brown;
+
+}
+
+.images-art {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+
+
+  }
 
 

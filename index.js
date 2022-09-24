@@ -33,19 +33,46 @@ function loadDom(data) {
     
 console.log(data)
 const divContainer = document.createElement('div')
-divContainer.setAttribute('id', 'art-card')
+divContainer.setAttribute('class', 'art-card')
 artContDiv.appendChild(divContainer)
-const h2 = document.createElement('h2')
-h2.innerText = data.title
-divContainer.appendChild(h2)
+// const h2 = document.createElement('h2')
+// h2.innerText = data.title
+// divContainer.appendChild(h2)
 
 fetch(data.api_link)
 .then(resp=>resp.json())
 .then(data2=>{
     console.log(data2)
     const img1 = document.createElement('img')
-    img1.src=`https://www.artic.edu/iiif/2/${data2.data.image_id}/full/843,/0/default.jpg`;
+    img1.src=`https://www.artic.edu/iiif/2/${data2.data.image_id}/full/830,/0/default.jpg`;
+    img1.setAttribute('class', 'images-art')
     divContainer.appendChild(img1)
+
+    ///////////
+
+    const h2 = document.createElement('h2')
+    h2.innerText = data2.data.title
+    divContainer.appendChild(h2)
+
+    //////////
+
+    const textDivBlock = document.createElement('div')
+    textDivBlock.setAttribute('class', 'text-info')
+    divContainer.appendChild(textDivBlock)
+
+    const authorDiv = document.createElement('div')
+    authorDiv.setAttribute('class', 'author')
+    textDivBlock.appendChild(authorDiv)
+
+    const paragraphTextDiv = document.createElement('div')
+    paragraphTextDiv.setAttribute('class', 'paragraph-text')
+    textDivBlock.appendChild(paragraphTextDiv)
+
+    // Add break after add-card
+    const brDiv = document.createElement('div')
+    divContainer.appendChild(brDiv)
+
+
     
     })
 }
