@@ -48,32 +48,44 @@ fetch(data.api_link)
     img1.setAttribute('class', 'images-art')
     divContainer.appendChild(img1)
 
-    ///////////
+    /////////// Add Title of Art
 
     const h2 = document.createElement('h2')
     h2.innerText = data2.data.title
     divContainer.appendChild(h2)
 
-    //////////
+    ////////// Create Text Div Block
 
     const textDivBlock = document.createElement('div')
     textDivBlock.setAttribute('class', 'text-info')
     divContainer.appendChild(textDivBlock)
 
+    ////////// Author of Art
+
     const authorDiv = document.createElement('div')
     authorDiv.setAttribute('class', 'author')
     textDivBlock.appendChild(authorDiv)
+
+    const paraAuthor = document.createElement('p')
+    const authorTitle = data2.data.artist_title
+    paraAuthor.innerText = `Artist Name: ${authorTitle}`
+    authorDiv.appendChild(paraAuthor)
+    
+    ////////// Paragraph Thumbnail
 
     const paragraphTextDiv = document.createElement('div')
     paragraphTextDiv.setAttribute('class', 'paragraph-text')
     textDivBlock.appendChild(paragraphTextDiv)
 
-    // Add break after add-card
+    const paraText = document.createElement('p')
+    const addThumbnailInfo = data.thumbnail.alt_text
+    paraText.innerText = `${addThumbnailInfo}`
+    paragraphTextDiv.appendChild(paraText)
+
+    /////////// Add break after add-card
     const brDiv = document.createElement('div')
     divContainer.appendChild(brDiv)
 
-
-    
     })
 }
 
