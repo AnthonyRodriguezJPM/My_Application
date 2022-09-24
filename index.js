@@ -32,9 +32,12 @@ function fetchArt(inputText) {
 function loadDom(data) {
     
 console.log(data)
+const divContainer = document.createElement('div')
+divContainer.setAttribute('id', 'art-card')
+artContDiv.appendChild(divContainer)
 const h2 = document.createElement('h2')
 h2.innerText = data.title
-artContDiv.appendChild(h2)
+divContainer.appendChild(h2)
 
 fetch(data.api_link)
 .then(resp=>resp.json())
@@ -42,7 +45,7 @@ fetch(data.api_link)
     console.log(data2)
     const img1 = document.createElement('img')
     img1.src=`https://www.artic.edu/iiif/2/${data2.data.image_id}/full/843,/0/default.jpg`;
-    h2.appendChild(img1)
+    divContainer.appendChild(img1)
     
     })
 }
