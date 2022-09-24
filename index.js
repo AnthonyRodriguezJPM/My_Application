@@ -8,6 +8,24 @@ const form = document.querySelector('#form');
 form.addEventListener('submit', handleSubmit);
 
 const submitBttn = document.querySelector('#enter');
+
+function changeColor(e){
+    e.preventDefault()
+    if(e.target.matches('input')) {
+    e.target.style.color = 'red'
+
+}}
+
+function mouseReturn(e) {
+    e.preventDefault()
+    e.target.style.color='black'
+}
+
+submitBttn.addEventListener('mouseover', changeColor)
+submitBttn.addEventListener('mouseout', mouseReturn)
+
+
+
 const artContDiv = document.querySelector('#art-collection')
 
 
