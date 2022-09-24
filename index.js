@@ -1,13 +1,19 @@
+
+////////// DOMContentLoaded Event
+
 document.addEventListener('DOMContentLoaded', (e)=>{
     e.preventDefault
     console.log('DOM FULLY LOADED')
 })
 
+///////// Submit Event on Form Element
 
 const form = document.querySelector('#form');
 form.addEventListener('submit', handleSubmit);
 
 const submitBttn = document.querySelector('#enter');
+
+///////// MouseOver/MouseOut EventListener
 
 function changeColor(e){
     e.preventDefault()
@@ -24,6 +30,7 @@ function mouseReturn(e) {
 submitBttn.addEventListener('mouseover', changeColor)
 submitBttn.addEventListener('mouseout', mouseReturn)
 
+/////// Building JS
 
 
 const artContDiv = document.querySelector('#art-collection')
@@ -39,7 +46,7 @@ function handleSubmit(e) {
 }
 
 function fetchArt(inputText) {
-    fetch(`https://api.artic.edu/api/v1/artworks/search?q=${inputText}&limit=5`)
+    fetch(`https://api.artic.edu/api/v1/artworks/search?q=${inputText}&limit=10`)
     .then(resp=>resp.json())
     .then(dataTotal=>dataTotal.data.forEach(loadDom))
 
@@ -114,7 +121,7 @@ fetch(data.api_link)
 
     const paraText = document.createElement('p')
     const addThumbnailInfo = data.thumbnail.alt_text
-    paraText.innerText = `${addThumbnailInfo}`
+    paraText.innerText = `Description: ${addThumbnailInfo}`
     paragraphTextDiv.appendChild(paraText)
 
     //////// Artwork Type, Year, and Department Title

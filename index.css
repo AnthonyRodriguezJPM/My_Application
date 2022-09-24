@@ -1,24 +1,68 @@
 #my-header {
     justify-content: center;
-    height: 15rem;
+    height: 20rem;
+    background-image: url('https://thumbs.gfycat.com/EmbellishedTatteredLadybug-size_restricted.gif');
+    background-size: 100% auto;
+    width: 100%;
+}
+
+#logo {
+    color: white
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+#input1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    text-align: center; 
+}
+
+.text-info {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 4rem;
+   
+}
+
+
+
+body {
+    background-color: black;
+
+}
+
+
+.art-card {
     background-color: whitesmoke;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
     
 }
 
-body {
-    background-color: white;
-}
 
-.art-card {
-    background-color: brown;
-
-}
 
 .images-art {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 50px;
+    padding-top: 4rem;
 
   }
 
