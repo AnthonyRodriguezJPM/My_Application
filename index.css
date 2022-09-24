@@ -20,7 +20,10 @@ body {
     margin-right: auto;
     padding-top: 50px;
 
+  }
 
+  .heart-button {
+    margin-left: 1rem;
   }
 
 

@@ -1,3 +1,9 @@
+document.addEventListener('DOMContentLoaded', (e)=>{
+    e.preventDefault
+    console.log('DOM FULLY LOADED')
+})
+
+
 const form = document.querySelector('#form');
 form.addEventListener('submit', handleSubmit);
 
@@ -6,17 +12,12 @@ const artContDiv = document.querySelector('#art-collection')
 
 
 function handleSubmit(e) {
-    
-
     e.preventDefault()
-
     artContDiv.innerHTML=''
-
     const inputText = e.target.input1.value
     console.log(inputText)
     form.reset()
     fetchArt(inputText)
-
 }
 
 function fetchArt(inputText) {
@@ -30,25 +31,41 @@ function fetchArt(inputText) {
 }
 
 function loadDom(data) {
+
+/////////**** Repeat
     
-console.log(data)
-const divContainer = document.createElement('div')
-divContainer.setAttribute('class', 'art-card')
-artContDiv.appendChild(divContainer)
+// console.log(data)
+// const divContainer = document.createElement('div')
+// divContainer.setAttribute('class', 'art-card')
+// artContDiv.appendChild(divContainer)
+
 // const h2 = document.createElement('h2')
 // h2.innerText = data.title
 // divContainer.appendChild(h2)
 
+///////////****** Repeat
+
 fetch(data.api_link)
 .then(resp=>resp.json())
 .then(data2=>{
+
+    console.log(data)
     console.log(data2)
+
+    /////////// Create Div Card
+
+    const divContainer = document.createElement('div')
+    divContainer.setAttribute('class', 'art-card')
+    artContDiv.appendChild(divContainer)
+
+    /////////// Create Image & Add Image
+
     const img1 = document.createElement('img')
     img1.src=`https://www.artic.edu/iiif/2/${data2.data.image_id}/full/830,/0/default.jpg`;
     img1.setAttribute('class', 'images-art')
     divContainer.appendChild(img1)
 
-    /////////// Add Title of Art
+    /////////// Add Title of Art to Div Card
 
     const h2 = document.createElement('h2')
     h2.innerText = data2.data.title
@@ -71,7 +88,7 @@ fetch(data.api_link)
     paraAuthor.innerText = `Artist Name: ${authorTitle}`
     authorDiv.appendChild(paraAuthor)
     
-    ////////// Paragraph Thumbnail
+    ////////// Paragraph Explanation
 
     const paragraphTextDiv = document.createElement('div')
     paragraphTextDiv.setAttribute('class', 'paragraph-text')
@@ -82,9 +99,28 @@ fetch(data.api_link)
     paraText.innerText = `${addThumbnailInfo}`
     paragraphTextDiv.appendChild(paraText)
 
+    //////// Artwork Type, Year, and Department Title
+
+    const typeAndYearP = document.createElement('p')
+    const typeArt = data2.data.artwork_type_title
+    const yearArt = data2.data.date_display
+    const departmentTitle = data2.data.department_title
+    typeAndYearP.innerText = `Type of Art: ${typeArt};          Year: ${yearArt};           Department: ${departmentTitle} `
+    paragraphTextDiv.appendChild(typeAndYearP)
+
+    ////////
+
+    const bttn = document.createElement('button')
+    bttn.innerText = '  ❤️  '
+    bttn.setAttribute('class', 'heart-button')
+    h2.appendChild(bttn)
+
     /////////// Add break after add-card
     const brDiv = document.createElement('div')
     divContainer.appendChild(brDiv)
+
+
+    
 
     })
 }
