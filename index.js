@@ -30,6 +30,11 @@ function mouseReturn(e) {
 submitBttn.addEventListener('mouseover', changeColor)
 submitBttn.addEventListener('mouseout', mouseReturn)
 
+// function likeButton(author) {
+//     e.preventDefault()
+//     alert(`${author} thanks you for your love!`)
+// }
+
 /////// Building JS
 
 
@@ -137,20 +142,19 @@ fetch(data.api_link)
     typeAndYearP.innerText = `Type of Art: ${typeArt};          Year: ${yearArt};           Department: ${departmentTitle} `
     paragraphTextDiv.appendChild(typeAndYearP)
 
-    ////////
+    //////// Creating Like Button & Click Event Listener
 
     const bttn = document.createElement('button')
     bttn.innerText = '  ❤️  '
     bttn.setAttribute('class', 'heart-button')
     h2.appendChild(bttn)
 
+    bttn.addEventListener('click', ()=>{
+    alert(`${data2.data.artist_title} thanks you for your love!`)})
+
     /////////// Add break after add-card
     const brDiv = document.createElement('div')
     divContainer.appendChild(brDiv)
-
-
-    
-
     })
 }
 
