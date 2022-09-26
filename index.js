@@ -17,10 +17,12 @@ const submitBttn = document.querySelector('#enter');
 
 function changeColor(e){
     e.preventDefault()
-    if(e.target.matches('#enter')) {
+    // console.log(e.target.enter)
+    // if(e.target.matches('#enter')) {
     e.target.style.color = 'red'
 
-}}
+// }
+}
 
 function mouseReturn(e) {
     e.preventDefault()
@@ -51,11 +53,11 @@ function handleSubmit(e) {
     Math.floor(trueNum, 10)
     form.reset()
 
-    if(Number.isFinite(trueNum)){
+    if(Number.isFinite(trueNum)===true && trueNum<=100){
     fetchArt(inputText, trueNum)
     }
     else {
-        return alert('Input Number on the Second Box Please')
+        return alert('Input Number Less Than or Equal to 100 on the Second Box Please')
     }
 }
     
