@@ -139,5 +139,6 @@ fetch(data.api_link)
     const brDiv = document.createElement('div')
     divContainer.appendChild(brDiv)
     })
+    .catch((error)=>console.error('There was an error with Fetch!', error))
 }
 

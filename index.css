@@ -2,11 +2,11 @@
     display: block;
     justify-content: center;
     height: 40rem;
-    background-image: url('https://i.imgur.com/eGeXAOu.gif');
+    /* background-image: url('https://i.imgur.com/eGeXAOu.gif'); */
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
-}
+} 
 
 .search {
     width: 100%;
@@ -19,7 +19,7 @@
 
 
 #logo {
-    color: white;
+    color: cadetblue;
     font-family: 'ELEGANT', sans-serif;
     font-weight: bold;
     font-size: 25px;
@@ -29,7 +29,7 @@
 }
 
 
-body header .intro {
+.rainbow {
     /* color: rgb(205, 177, 49);   */
     background-image: linear-gradient(to left,purple, blue, red, pink);  
     -webkit-background-clip: text;
@@ -38,7 +38,7 @@ body header .intro {
     font-family: 'ELEGANT', sans-serif;
     font-weight: bold;
     padding-top: 5rem;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 
