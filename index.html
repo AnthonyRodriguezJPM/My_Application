@@ -17,40 +17,53 @@
 
         <!-- Icon -->
         <link rel="icon" href="images/icon.jpeg" type="image/jpeg" sizes="16x16">
+
+        <link href="http://fonts.cdnfonts.com/css/elegant-2" rel="stylesheet">
+                
     </head>
 
     <body>
         <header id="my-header">
             <div id= "logo">Feel The Art</div>
-            <h1>Let The Your Creative Side Show</h1>
-        </header>
-        <div class="search">
-            <form id="form">
-                <h3>Search for Art</h3>
+            <h1 class="rainbow">Let The Your Creative Side Show</h1>
+            <div class="search">
+                <form id="form">
+                    <h3>Search for Art</h3>
+    
+                    <input
+                    id="input1"
+                    type="text"
+                    name="name"
+                    value=""
+                    placeholder="Enter Keyword"
+                    class="input-text"
+                    />
 
-                <input
-                id="input1"
-                type="text"
-                name="name"
-                value=""
-                placeholder="Enter Keyword"
-                class="input-text"
-                />
-            
+                    <input
+                    id="num_Images"
+                    type="text"
+                    name="number"
+                    value=""
+                    placeholder="Enter Number of Images"
+                    class="input-text"
+                    />
+                
+                    <br />
+    
+                    <input
+                    id="enter"
+                    type="submit"
+                    name="submit"
+                    value="Paint Away"
+                    class="submit"
+                    />
+                </form>
+    
                 <br />
-
-                <input
-                id="enter"
-                type="submit"
-                name="submit"
-                value="Paint Away"
-                class="submit"
-                />
-            </form>
-
-            <br />
-            
-        </div>
+                
+            </div>
+        </header>
+        
         <div id="art-collection"></div>
         <div id="api-link">
             <a class="api-source" href="https://www.artic.edu/open-access/public-api">API Source</a>

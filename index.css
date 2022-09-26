@@ -1,8 +1,9 @@
 #my-header {
     justify-content: center;
     height: 20rem;
-    background-image: url('https://thumbs.gfycat.com/EmbellishedTatteredLadybug-size_restricted.gif');
-    background-size: 100% auto;
+    background-image: url('https://i.imgur.com/eGeXAOu.gif');
+    background-size: 100% auto ;
+    background-repeat: no-repeat;
     width: 100%;
 }
 
@@ -10,33 +11,80 @@
     color: white
 }
 
-h1 {
-    color: white;
+
+.rainbow {
+    /* color: white;  */
     text-align: center;
+    font-family: 'ELEGANT', sans-serif;
+    font-weight: bold;
     padding-top: 5rem;
-}
+    font-size: 40px;
+     -webkit-animation: rainbow 4s infinite;
+
+    }
+
+@import url('http://fonts.cdnfonts.com/css/elegant-2');
+
+                
+    
+@keyframes rainbow {
+    0%{color: orange;}
+    10%{color: purple;}
+    20%{color: red;}
+    30%{color: CadetBlue};
+    40%{color: yellow;}
+    50%{color: coral;}
+    60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+    100%{color: orange;}
+    }
+       
+    
+
+   
 
 #input1 {
+    display: block;
     text-align: center;
+    margin: 0 auto
+
+}
+
+#num_Images {
+    display: block;
+    text-align: center;
+    margin: 0 auto
+}
+
+#enter {
+    display: block;
+    margin: 0 auto
 }
 
 h2 {
     text-align: center;
+    color: white;
+    font-family: 'ELEGANT', sans-serif
 }
 
 h3 {
     color: white;
     text-align: center; 
+    font-family: 'ELEGANT', sans-serif;
 }
 
 .text-info {
+    font-family: 'ELEGANT', sans-serif;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 2rem;
     margin-bottom: 4rem;
+    color: white;
+    letter-spacing: 0.05rem
    
 }
-
 
 
 body {
@@ -44,19 +92,18 @@ body {
 
 }
 
-
 .art-card {
-    background-color: whitesmoke;
-    width: 100%;
+    margin: auto;
+    background-color: black;
+    width: 75%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    
 
     
 }
-
-
 
 .images-art {
     display: block;

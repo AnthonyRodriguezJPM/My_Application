@@ -17,7 +17,7 @@ const submitBttn = document.querySelector('#enter');
 
 function changeColor(e){
     e.preventDefault()
-    if(e.target.matches('input')) {
+    if(e.target.matches('#enter')) {
     e.target.style.color = 'red'
 
 }}
@@ -38,17 +38,21 @@ const artContDiv = document.querySelector('#art-collection')
 
 function handleSubmit(e) {
     e.preventDefault()
+    // resets inner HTML and will delete previous images and reload new images
     artContDiv.innerHTML=''
     const inputText = e.target.input1.value
     console.log(inputText)
+    const inputNum = e.target.num_Images.value
+    console.log(inputNum)
     form.reset()
-    fetchArt(inputText)
+    fetchArt(inputText, inputNum)
 }
 
-function fetchArt(inputText) {
-    fetch(`https://api.artic.edu/api/v1/artworks/search?q=${inputText}&limit=10`)
+function fetchArt(inputText, inputNum) {
+    fetch(`https://api.artic.edu/api/v1/artworks/search?q=${inputText}&limit=${inputNum}`)
     .then(resp=>resp.json())
     .then(dataTotal=>dataTotal.data.forEach(loadDom))
+    .catch((error)=>console.error('There was an error with Fetch!', error))
 
     // fetch(`https://api.artic.edu/api/v1/artworks/search?q=${inputText}&limit=5`)
     // .then(resp=>resp.json())
