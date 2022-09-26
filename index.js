@@ -57,21 +57,20 @@ function handleSubmit(e) {
     fetchArt(inputText, trueNum)
     }
     else {
-        return alert('Input Number Less Than or Equal to 100 on the Second Box Please')
+        return alert('Input Number Less Than or Equal to 100 on the Second Box')
     }
 }
     
 
 function fetchArt(inputText, trueNum) {
-        fetch(`https://api.artic.edu/api/v1/artworks/search?q=${inputText}&limit=${trueNum}`)
-        .then(resp=>resp.json())
-        .then(dataTotal=>dataTotal.data.forEach(loadDom))
-        .catch((error)=>console.error('There was an error with Fetch!', error))
+    fetch(`https://api.artic.edu/api/v1/artworks/search?q=${inputText}&limit=${trueNum}`)
+    .then(resp=>resp.json())
+    .then(dataTotal=>dataTotal.data.forEach(loadDom))
+    .catch((error)=>console.error('There was an error with Fetch!', error))
 
         // fetch(`https://api.artic.edu/api/v1/artworks/search?q=${inputText}&limit=5`)
         // .then(resp=>resp.json())
         // .then(dataTotal=>console.log(dataTotal))
-        
     }
 
 
