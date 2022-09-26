@@ -1,14 +1,20 @@
+
+
 #my-header {
     justify-content: center;
-    height: 20rem;
+    height: 40rem;
     background-image: url('https://i.imgur.com/eGeXAOu.gif');
     background-size: 100% auto ;
     background-repeat: no-repeat;
     width: 100%;
 }
 
+
+
 #logo {
-    color: white
+    color: white;
+    font-size: 25px;
+    padding-bottom: 75px
 }
 
 
@@ -19,15 +25,14 @@
     font-weight: bold;
     padding-top: 5rem;
     font-size: 40px;
-     -webkit-animation: rainbow 4s infinite;
+}
 
-    }
 
 @import url('http://fonts.cdnfonts.com/css/elegant-2');
 
                 
     
-@keyframes rainbow {
+@keyframes h3 {
     0%{color: orange;}
     10%{color: purple;}
     20%{color: red;}
@@ -65,18 +70,22 @@
 
 h2 {
     text-align: center;
-    color: white;
+    color: whitesmoke;
     font-family: 'ELEGANT', sans-serif
 }
 
 h3 {
     color: white;
+    font-size: 25px;
     text-align: center; 
     font-family: 'ELEGANT', sans-serif;
+    -webkit-animation: h3 4s infinite;
+
 }
 
 .text-info {
     font-family: 'ELEGANT', sans-serif;
+    text-align: center;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 2rem;
@@ -89,7 +98,6 @@ h3 {
 
 body {
     background-color: black;
-
 }
 
 .art-card {
