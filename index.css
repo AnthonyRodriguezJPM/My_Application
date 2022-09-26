@@ -106,27 +106,31 @@ body {
     background-color: black;
 }
 
+#art-collection {
+    margin: 2rem
+}
+
 .art-card {
     margin-top: 5rem;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
     background-color: rgb(236, 129, 129);
     width: 75%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    
 
-    
 }
 
 .images-art {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
+    
     padding-top: 4rem;
-
+    width: 100%
   }
 
   .heart-button {
