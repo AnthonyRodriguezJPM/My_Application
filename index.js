@@ -42,23 +42,42 @@ function handleSubmit(e) {
     // resets inner HTML and will delete previous images and reload new images
     artContDiv.innerHTML=''
     const inputText = e.target.input1.value
-    console.log(inputText)
+    // console.log(inputText)
     const inputNum = e.target.num_Images.value
-    console.log(inputNum)
+    // console.log(inputNum)
+
+    // inputNum is a string, convert to number
+    console.log(typeof(inputNum))
+    const trueNum = Number(inputNum)
+    console.log(typeof(trueNum))
+    Math.floor(trueNum, 10)
     form.reset()
-    fetchArt(inputText, inputNum)
-}
 
-function fetchArt(inputText, inputNum) {
-    fetch(`https://api.artic.edu/api/v1/artworks/search?q=${inputText}&limit=${inputNum}`)
-    .then(resp=>resp.json())
-    .then(dataTotal=>dataTotal.data.forEach(loadDom))
-    .catch((error)=>console.error('There was an error with Fetch!', error))
+    if(Number.isFinite(trueNum)){
+    fetchArt(inputText, trueNum)
+    }
 
-    // fetch(`https://api.artic.edu/api/v1/artworks/search?q=${inputText}&limit=5`)
-    // .then(resp=>resp.json())
-    // .then(dataTotal=>console.log(dataTotal))
+    else {
+        return alert('Input Number on the Second Box Please')
+    }
 }
+    
+
+function fetchArt(inputText, trueNum) {
+    
+
+        fetch(`https://api.artic.edu/api/v1/artworks/search?q=${inputText}&limit=${trueNum}`)
+        .then(resp=>resp.json())
+        .then(dataTotal=>dataTotal.data.forEach(loadDom))
+        .catch((error)=>console.error('There was an error with Fetch!', error))
+
+        // fetch(`https://api.artic.edu/api/v1/artworks/search?q=${inputText}&limit=5`)
+        // .then(resp=>resp.json())
+        // .then(dataTotal=>console.log(dataTotal))
+        
+    }
+
+
 
 function loadDom(data) {
 
@@ -141,4 +160,5 @@ fetch(data.api_link)
     })
     .catch((error)=>console.error('There was an error with Fetch!', error))
 }
+
 
