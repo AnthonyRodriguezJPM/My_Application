@@ -30,10 +30,6 @@ function mouseReturn(e) {
 submitBttn.addEventListener('mouseover', changeColor)
 submitBttn.addEventListener('mouseout', mouseReturn)
 
-// function likeButton(author) {
-//     e.preventDefault()
-//     alert(`${author} thanks you for your love!`)
-// }
 
 /////// Building JS
 
@@ -65,19 +61,6 @@ function fetchArt(inputText, inputNum) {
 }
 
 function loadDom(data) {
-
-/////////**** Repeat
-    
-// console.log(data)
-// const divContainer = document.createElement('div')
-// divContainer.setAttribute('class', 'art-card')
-// artContDiv.appendChild(divContainer)
-
-// const h2 = document.createElement('h2')
-// h2.innerText = data.title
-// divContainer.appendChild(h2)
-
-///////////****** Repeat
 
 fetch(data.api_link)
 .then(resp=>resp.json())

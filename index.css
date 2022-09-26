@@ -1,23 +1,39 @@
 #my-header {
+    display: block;
     justify-content: center;
     height: 40rem;
     background-image: url('https://i.imgur.com/eGeXAOu.gif');
-    background-size: 100% auto ;
+    background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
 }
+
+.search {
+    width: 100%;
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;*/
+} 
 
 
 
 #logo {
     color: white;
+    font-family: 'ELEGANT', sans-serif;
+    font-weight: bold;
     font-size: 25px;
-    padding-bottom: 75px
+    padding-top: .5rem;
+    padding-bottom: 75px;
+    padding-left: 1rem;
 }
 
 
 body header .intro {
-    color: whitesmoke;  
+    /* color: rgb(205, 177, 49);   */
+    background-image: linear-gradient(to left,purple, blue, red, pink);  
+    -webkit-background-clip: text;
+    color: transparent;
     text-align: center;
     font-family: 'ELEGANT', sans-serif;
     font-weight: bold;
@@ -120,7 +136,6 @@ body {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-
 }
 
 .images-art {
@@ -128,8 +143,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
-    
-    padding-top: 4rem;
     width: 100%
   }
 
