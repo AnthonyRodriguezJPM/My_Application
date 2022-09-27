@@ -3,10 +3,10 @@
 
 
 ## 🚀 About Me
-I'm a student at Flatiron School currently completing the Phase-1 assessment Project. Currently in the process of transitioning careers from Chemical Engineering to Software Engineering.
+I'm a student at Flatiron School currently completing the Phase-1 assessment Project. Currently in the process of transitioning careers from Chemical Engineering to Software Engineering. I am currently working at JPMC and look forward to moving up within the company and become a software engineer. This is one of many projects I will be adding to my portfolio once I graduate from the program. 
 
 
-# Digital Art Musuem Project
+# Digital Art Museum Project
 
 
 
@@ -57,6 +57,6 @@ Fetch /api/v1/artworks/search?q=${inputText}&limit=${trueNum}
 ## Acknowledgements
 
  - [Awesome Coding Youtube Channel](https://www.youtube.com/c/ColorCodeio)
- - [Art Institue of Chicago API](https://www.artic.edu/open-access/public-api)
+ - [Art Institute of Chicago API](https://www.artic.edu/open-access/public-api)
  - [W3 Schools](https://www.w3schools.com)
 
