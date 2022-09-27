@@ -1,5 +1,5 @@
 
-# Hi, I'm Anthony! Welcome to my Phase-1 project! 👋
+# Hi, my name is Anthony! Welcome to my Phase-1 project! 👋
 
 
 ## 🚀 About Me
@@ -43,7 +43,7 @@ Fetch /api/v1/artworks/search?q=${inputText}&limit=${trueNum}
 
 
 ## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/AnthonyRodriguezJPM)
+[![Portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/AnthonyRodriguezJPM)
 [[Dev Blog]](https://dev.to/anthonyrodriguezjpm)
 
 
