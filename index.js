@@ -20,8 +20,6 @@ function changeColor(e){
     // console.log(e.target.enter)
     // if(e.target.matches('#enter')) {
     e.target.style.color = 'red'
-
-// }
 }
 
 function mouseReturn(e) {
@@ -61,7 +59,6 @@ function handleSubmit(e) {
     }
 }
     
-
 function fetchArt(inputText, trueNum) {
     fetch(`https://api.artic.edu/api/v1/artworks/search?q=${inputText}&limit=${trueNum}`)
     .then(resp=>resp.json())
@@ -72,8 +69,6 @@ function fetchArt(inputText, trueNum) {
         // .then(resp=>resp.json())
         // .then(dataTotal=>console.log(dataTotal))
     }
-
-
 
 function loadDom(data) {
 
