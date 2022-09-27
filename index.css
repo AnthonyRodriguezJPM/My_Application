@@ -1,8 +1,9 @@
+/* Type CSS code here */
+
 #my-header {
     display: block;
     justify-content: center;
     height: 40rem;
-    /* background-image: url('https://i.imgur.com/eGeXAOu.gif'); */
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -10,13 +11,8 @@
 
 .search {
     width: 100%;
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;*/
+   
 } 
-
-
 
 #logo {
     color: cadetblue;
@@ -27,7 +23,6 @@
     padding-bottom: 75px;
     padding-left: 1rem;
 }
-
 
 .rainbow {
     /* color: rgb(205, 177, 49);   */
@@ -41,11 +36,9 @@
     font-size: 50px;
 }
 
-
 @import url('http://fonts.cdnfonts.com/css/elegant-2');
 
                 
-    
 @keyframes h3 {
     0%{color: orange;}
     10%{color: purple;}
@@ -58,12 +51,8 @@
     80%{color: DeepPink;}
     90%{color: DodgerBlue;}
     100%{color: orange;}
-    }
+}
        
-    
-
-   
-
 #input1 {
     display: block;
     text-align: center;
@@ -86,8 +75,6 @@
     padding-right: 1rem;
     padding-left: 1rem
 }
-
-
 
 h2 {
     text-align: center;
@@ -114,9 +101,7 @@ h3 {
     color: white;
     letter-spacing: 0.05rem;
     display: auto
-   
 }
-
 
 body {
     background-color: black;
@@ -146,8 +131,19 @@ body {
     width: 100%
   }
 
-  .heart-button {
+.heart-button {
     margin-left: 1rem;
-  }
+}
+
+#api-link {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+}
+
+.api-source {
+    color: orange
+}
 
 
