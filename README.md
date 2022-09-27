@@ -50,7 +50,7 @@ Fetch /api/v1/artworks/search?q=${inputText}&limit=${trueNum}
 
 ## Demo
 
-![Art-Webpage](file:///Users/tony/Desktop/Art_Project.gif)
+![Art-Webpage](/Gifs/Art_Project.gif)
 
 
 
