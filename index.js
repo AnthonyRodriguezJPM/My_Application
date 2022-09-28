@@ -49,6 +49,7 @@ function handleSubmit(e) {
     Math.floor(trueNum, 10)
     form.reset()
 
+    // If both conditions are true, run JS, otherwise create an alert
     if(Number.isFinite(trueNum)===true && trueNum<=100){
     fetchArt(inputText, trueNum)
     }
@@ -62,11 +63,7 @@ function fetchArt(inputText, trueNum) {
     .then(resp=>resp.json())
     .then(dataTotal=>dataTotal.data.forEach(loadDom))
     .catch((error)=>console.error('There was an error with Fetch!', error))
-
-        // fetch(`https://api.artic.edu/api/v1/artworks/search?q=${inputText}&limit=5`)
-        // .then(resp=>resp.json())
-        // .then(dataTotal=>console.log(dataTotal))
-    }
+}
 
 function loadDom(data) {
 
@@ -149,5 +146,3 @@ function loadDom(data) {
         })
     .catch((error)=>console.error('There was an error with Fetch!', error))
 }
-
-
