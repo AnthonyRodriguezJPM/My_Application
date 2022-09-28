@@ -25,10 +25,11 @@
 }
 
 .rainbow {
-    /* color: rgb(205, 177, 49);   */
-    background-image: linear-gradient(to left,purple, blue, red, pink);  
+    background: linear-gradient(to left,purple, blue, red, pink); 
+    /* Not able make this red line go away. Need this line of code to make rainbow effect */
     -webkit-background-clip: text;
-    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     font-family: 'ELEGANT', sans-serif;
     font-weight: bold;
@@ -37,6 +38,14 @@
 }
 
 @import url('http://fonts.cdnfonts.com/css/elegant-2');
+
+h3 {
+    color: white;
+    font-size: 25px;
+    text-align: center; 
+    font-family: 'ELEGANT', sans-serif;
+    -webkit-animation: h3 4s infinite;
+}
 
                 
 @keyframes h3 {
@@ -80,15 +89,6 @@ h2 {
     text-align: center;
     color: whitesmoke;
     font-family: 'ELEGANT', sans-serif
-}
-
-h3 {
-    color: white;
-    font-size: 25px;
-    text-align: center; 
-    font-family: 'ELEGANT', sans-serif;
-    -webkit-animation: h3 4s infinite;
-
 }
 
 .text-info {
