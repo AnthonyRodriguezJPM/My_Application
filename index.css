@@ -44,7 +44,7 @@ h3 {
     font-size: 25px;
     text-align: center; 
     font-family: 'ELEGANT', sans-serif;
-    -webkit-animation: h3 4s infinite;
+    animation: h3 4s infinite;
 }
 
                 
