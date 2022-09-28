@@ -17,8 +17,6 @@ const submitBttn = document.querySelector('#enter');
 
 function changeColor(e){
     e.preventDefault()
-    // console.log(e.target.enter)
-    // if(e.target.matches('#enter')) {
     e.target.style.color = 'red'
 }
 
